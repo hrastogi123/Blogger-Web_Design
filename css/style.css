@@ -24,7 +24,7 @@ a{
     flex-wrap: wrap ;
 }
 .nav{
-    background: white;
+    background: black;
     padding: 0.2rem;
     height: 0rem;
     min-height: 10vh;
@@ -33,6 +33,27 @@ a{
 
 .nav .nav-menu{
     justify-content: space-between;
+}
+
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 95%;
+    cursor: pointer;
+    display: none;
+}
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: rgb(17, 16, 16);
+}
+
+.collapse{
+    height: 30rem;
 }
 
 .nav .nav-items{
@@ -67,7 +88,18 @@ a{
     padding: 0 .2rem;
 }
 .nav .social i:hover{
-    color: blue;
+    color: red;
 }
 
- 
+ @media only screen and (max-width: 750px){
+    
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+    }
+    .nav .toggle-collapse{
+        display: initial;
+    }
+    .nav .toggle-collapse .toggle-icons i{
+        color: whitesmoke;
+    }
+ }
