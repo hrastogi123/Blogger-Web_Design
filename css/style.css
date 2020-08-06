@@ -17,6 +17,9 @@ a{
     text-decoration: none;
     color: teal;
 }
+hr{
+    margin-bottom: 2rem;
+}
 h1{
     font-family: Oswald;
     font-size: 2.5rem;
@@ -24,6 +27,9 @@ h1{
 h3{
     font-size: 1.3rem;
     font-family: Open_Sans_Condensed;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
 }
 button.btn-blog{
     padding: .6rem 2rem;
@@ -33,6 +39,7 @@ button.btn-blog{
     padding: .6rem 2rem;
     margin: .5rem;
     cursor: pointer;
+    outline: none;
 }
 .container{
     margin: 0 5vw;
@@ -170,8 +177,71 @@ main .blog-content .blog-title{
 main .blog-content span{
     display: block;
 }
-/*End*/
-/*End*/
+/*End carousel*/
+
+/*site content */
+
+main .site-content{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+main .post-content{
+    width: 100%;
+}
+main .site-content .post-content .post-title{
+    padding: 1rem 0;
+    position: relative;
+    margin-top: 2rem;
+}
+main .site-content .post-content .post-image .post-info{
+    background: lightsalmon;
+    padding: 1rem;
+    position: absolute;
+    border:1px solid black;
+    border-radius: 3rem;
+    bottom: -200%;
+    left: 22.5vw;
+}
+main .site-content .post-content .post-image div{
+    overflow: hidden;
+}
+main .site-content .post-content .post-image .img{
+    width: 100%;
+    transition: all 1s ease-out;
+}
+main .site-content .post-content .post-image .img:hover{
+       transform: scale(1.1);
+       cursor: pointer;
+}
+main .site-content .post-content .post-image .post-info span{
+    margin: .3rem;
+}
+main .post-content .post-title a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+.site-content .post-content .post-title .post-btn{
+    background: lightsalmon;
+}
+
+.site-content .page{
+    justify-content: center;
+    margin: 3rem 0;
+}
+.site-content .page a{
+    padding: .6rem .9rem;
+    border-radius: 2rem;
+    margin: 0 .3rem;
+    font-family: Anton;
+}
+  
+.site-content .page .pages{
+    background: darkslategray;
+    color: white;
+}
+/*End site content*/
+
+/*End main*/
 
  @media only screen and (max-width: 750px){
     
