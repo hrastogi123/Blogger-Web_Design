@@ -25,6 +25,18 @@ h3{
     font-size: 1.3rem;
     font-family: Open_Sans_Condensed;
 }
+button.btn-blog{
+    padding: .6rem 2rem;
+    background: lightseagreen;
+    border: 1px solid black;
+    border-radius: 2rem;
+    padding: .6rem 2rem;
+    margin: .5rem;
+    cursor: pointer;
+}
+.container{
+    margin: 0 5vw;
+}
 .flex-row{
     display: flex;
     flex-direction: row;
@@ -98,11 +110,11 @@ h3{
     color: red;
 }
 
-/*Site title Css*/
+/*main Site title Css*/
 main .site-title{
     background: url('../assets/Background-image.png');
     background-size: cover;
-    height: 100vh;
+    height: 113vh;
     display: flex;
     justify-content: center;
 
@@ -130,6 +142,35 @@ main .site-title .btn:hover{
     background: transparent;
     color: white;
 }
+
+/* Owl - Carousel*/
+main .blog{
+    background: url('../assets/Abract01.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    width: 100%;
+    background-size: 65%;
+}
+main .blog .blog-post{
+    padding-top: 5.5rem;
+}
+main .blog-post .blog-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 75%;
+    height: 75%;
+    margin: 3rem 2rem;
+    box-shadow:10px 15px 20px gray;
+}
+main .blog-content .blog-title{
+    padding: 1rem 0; 
+}
+main .blog-content span{
+    display: block;
+}
+/*End*/
 /*End*/
 
  @media only screen and (max-width: 750px){
@@ -142,5 +183,5 @@ main .site-title .btn:hover{
     }
     .nav .toggle-collapse .toggle-icons i{
         color: whitesmoke;
-    }
+    } 
  }
