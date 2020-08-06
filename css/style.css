@@ -17,7 +17,14 @@ a{
     text-decoration: none;
     color: teal;
 }
-
+h1{
+    font-family: Oswald;
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 1.3rem;
+    font-family: Open_Sans_Condensed;
+}
 .flex-row{
     display: flex;
     flex-direction: row;
@@ -90,6 +97,40 @@ a{
 .nav .social i:hover{
     color: red;
 }
+
+/*Site title Css*/
+main .site-title{
+    background: url('../assets/Background-image.png');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+}
+main .site-title .site-background{
+    padding-top: 10rem;
+    text-align: center;
+    color: blanchedalmond;
+}
+main .site-title h1,h3{
+    margin: 0.3rem;
+}
+main .site-title .btn{
+    margin: 1.8rem;
+    background-color:lightskyblue;
+    border: 1px solid lightyellow;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: Helvetica;
+    cursor: pointer;
+}
+
+main .site-title .btn:hover{
+    background: transparent;
+    color: white;
+}
+/*End*/
 
  @media only screen and (max-width: 750px){
     
