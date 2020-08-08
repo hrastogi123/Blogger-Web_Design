@@ -1,2 +1,2 @@
-# Blogger-Website
--a simple website for blogger.
+# Blogger-Web_Design
+-a simple web design for blogger Website.
