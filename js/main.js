@@ -42,4 +42,10 @@ $('.move-up span').click(function(){
     },1000);
 })
  /*Move up scroll End*/
+
+/** Animation On Scroll*/
+
+AOS.init();
+
+/**End Animation */
 });

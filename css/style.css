@@ -113,10 +113,22 @@ button.btn-blog{
 .nav .social i{
     padding: 0 .2rem;
 }
-.nav .social i:hover{
-    color: red;
+.nav .social .fb:hover{
+    color: blue;
+    cursor: pointer;
 }
-
+.nav .social .tw:hover{
+    color: blue;
+    cursor: pointer;
+}
+.nav .social .in:hover{
+    color: rgb(189, 72, 72);
+    cursor: pointer;
+}
+.nav .social .yo:hover{
+    color: red;
+    cursor: pointer;
+}
 /*main Site title Css*/
 main .site-title{
     background: url('../assets/Background-image.png');
@@ -137,7 +149,7 @@ main .site-title h1,h3{
 main .site-title .btn{
     margin: 1.8rem;
     background-color:lightskyblue;
-    border: 1px solid lightyellow;
+    outline: none;
     border-radius: 2rem;
     padding: 1rem 3rem;
     font-size: 1rem;
@@ -356,6 +368,22 @@ footer.footer .follow div i{
     color: white;
     padding: 0 .4rem;
 }
+footer.footer .follow .facebook:hover{
+    color: blue;
+    cursor: pointer;
+}
+footer.footer .follow .twitter:hover{
+    color: blue;
+    cursor: pointer;
+}
+footer.footer .follow .insta:hover{
+    color: rgb(189, 72, 72);
+    cursor: pointer;
+}
+footer.footer .follow .youtube:hover{
+    color: red;
+    cursor: pointer;
+}
 footer.footer .rights{
     justify-content: center;
     color: darkgrey;
@@ -374,9 +402,11 @@ footer.footer .move-up span:hover{
 }
 /*End Footer*/
 
-
-
-
+@media only screen and (max-width: 1130px){
+    footer.footer .container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
 
  @media only screen and (max-width: 750px){
     
@@ -389,4 +419,39 @@ footer.footer .move-up span:hover{
     .nav .toggle-collapse .toggle-icons i{
         color: whitesmoke;
     } 
+    main .site-content{
+        grid-template-columns: 100%;
+    }
  }
+ @media only screen and (max-width: 520px){
+     .site-content .post-content .post-image .post-info{
+         font-size: .6rem;
+     }
+     footer.footer .container{
+         grid-template-columns: repeat(1,1fr);
+     }
+     footer .rights{
+         padding: 0 1.4rem;
+         text-align: center;
+     }
+     .site-content .sidebar .newsletter .form .ip{
+        margin: 2rem 2.5rem;
+        width: 75%;
+        padding: .7rem .3rem;
+    }
+ }
+
+ @media only screen and (max-width: 240px){
+    .site-content .post-content .post-image .post-info{
+       display: none;
+    }
+    .site-content .sidebar .newsletter .form .ip{
+        margin: 2rem 2.5rem;
+        width: 40%;
+        padding: .7rem .3rem;
+    }
+    .site-content .sidebar .newsletter .form .bt{
+        width: 50%;
+       font-size: 50%;
+    }
+}
